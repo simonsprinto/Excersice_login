@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Kontaktformulär</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Butiken</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto align-items-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Startsida</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Kontakt</a>
+                </li>
+                <li class="nav-item ml-4">
+                    <button class="btn btn-primary" style="padding-top: 0; padding-bottom: 0;">
+                        <a class="nav-link" href="login.html" style="color: white;">Logga in</a>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-md-6 offset-md-3">
+            <h2 class="mb-4">Kontakta oss</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Namn:</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-post:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telefonnummer:</label>
+                    <input type="tel" class="form-control" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Meddelande:</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="button" class="btn btn-primary" onclick="submitForm()">Skicka</button>
+                <p id="successMessage" class="text-success mt-2"></p>
+                <p id="errorMessage" class="text-danger mt-2"></p>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="contact-script.js"></script>
+</body>
+</html>

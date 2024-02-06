@@ -3,35 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Inloggningssida</title>
+    <title>Startsida</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Butiken</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto align-items-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Startsida</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Kontakt</a>
+                </li>
+                <li class="nav-item ml-4">
+                    <button class="btn btn-primary" style="padding-top: 0; padding-bottom: 0;">
+                        <a class="nav-link" href="login.html" style="color: white;">Logga in</a>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+
 <div class="container">
     <div class="row mt-5">
-        <div class="col-md-6 offset-md-3">
-            <h2 class="mb-4">Logga in</h2>
-            <form id="loginForm">
-                <div class="form-group">
-                    <label for="username">Användarnamn:</label>
-                    <input type="text" class="form-control" id="username" name="username" required>
+        <div class="col-md-12">
+            <div class="jumbotron text-center" style="padding: 15%; background-image: url('media/hero.jpg'); background-size: cover; background-position: center;">
+                <h1 class="display-3">Välkommen till vår butik</h1>
+                <p class="lead">Upptäck vårt fantastiska utbud av produkter</p>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="row mt-4">
+        <!-- Produktkort -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="media/bil.jpg" class="card-img-top" alt="Produkt 1">
+                <div class="card-body">
+                    <h5 class="card-title">Produkt 1</h5>
+                    <p class="card-text">Beskrivning av Produkt 1.</p>
+                    <a href="#" class="btn btn-primary">Köp nu</a>
                 </div>
-                <div class="form-group">
-                    <label for="password">Lösenord:</label>
-                    <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="media/default.jpg" class="card-img-top" alt="Produkt 2">
+                <div class="card-body">
+                    <h5 class="card-title">Produkt 2</h5>
+                    <p class="card-text">Beskrivning av Produkt 2.</p>
+                    <a href="#" class="btn btn-primary">Köp nu</a>
                 </div>
-                <button type="button" class="btn btn-primary" onclick="login()">Logga in</button>
-                <p id="errorMessage" class="text-danger mt-4"></p>
-            </form>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="media/doja.jpg" class="card-img-top" alt="Produkt 3">
+                <div class="card-body">
+                    <h5 class="card-title">Produkt 3</h5>
+                    <p class="card-text">Beskrivning av Produkt 3.</p>
+                    <a href="#" class="btn btn-primary">Köp nu</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="media/munk.jpg" class="card-img-top" alt="Produkt 4">
+                <div class="card-body">
+                    <h5 class="card-title">Produkt 4</h5>
+                    <p class="card-text">Beskrivning av Produkt 4.</p>
+                    <a href="#" class="btn btn-primary">Köp nu</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="media/product.jpg" class="card-img-top" alt="Produkt 5">
+                <div class="card-body">
+                    <h5 class="card-title">Produkt 5</h5>
+                    <p class="card-text">Beskrivning av Produkt 5.</p>
+                    <a href="#" class="btn btn-primary">Köp nu</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="media/stark.jpg" class="card-img-top" alt="Produkt 6">
+                <div class="card-body">
+                    <h5 class="card-title">Produkt 6</h5>
+                    <p class="card-text">Beskrivning av Produkt 6.</p>
+                    <a href="#" class="btn btn-primary">Köp nu</a>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
+
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="script.js"></script>
 </body>
 </html>
